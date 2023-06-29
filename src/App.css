@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Mont";
+  src: url("./fonts/Mont/Mont-Bold.otf");
+  font-display: block;
+}
+
+@font-face {
+  font-family: "MontRegular";
+  src: url("./fonts/Mont/Mont-Regular.otf");
+  font-display: block;
+}
+
+
+
+body {
+  color: white;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Mont;
+  margin: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+body p {
+  margin: 0;
+}
+
+.soustexte {
+  font-family: MontRegular;
+}
+.soustextev1 {
+  font-family: MontRegular;
+}
+.soustexte1 {
+  font-family: MontRegular;
+}

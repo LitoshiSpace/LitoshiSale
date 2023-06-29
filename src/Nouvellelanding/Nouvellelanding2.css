@@ -1,0 +1,86 @@
+.ellipsev0 {
+  width: 428.308px;
+  height: 400px;
+  flex-shrink: 0;
+  border-radius: 428.308px;
+  background: #fff;
+  filter: blur(50px);
+  z-index: 10;
+  position: fixed;
+}
+.ellipsev1 {
+  width: 749.539px;
+  height: 700px;
+  flex-shrink: 0;
+  border-radius: 749.539px;
+  background: rgba(255, 230, 0, 0.5);
+  filter: blur(50px);
+  z-index: 9;
+  position: fixed;
+}
+.ellipsev2 {
+  width: 963.692px;
+  height: 900px;
+  flex-shrink: 0;
+  border-radius: 963.692px;
+  background: rgba(255, 122, 0, 0.5);
+  filter: blur(100px);
+  z-index: 8;
+  position: fixed;
+}
+.ellipsev3 {
+  width: 1177.846px;
+  height: 1100px;
+  flex-shrink: 0;
+  border-radius: 1177.846px;
+  background: rgba(226, 61, 190, 0.5);
+  filter: blur(100px);
+  z-index: 7;
+  position: fixed;
+}
+.ellipsev4 {
+  width: 1392px;
+  height: 1300px;
+  flex-shrink: 0;
+  border-radius: 1392px;
+  background: rgba(86, 58, 255, 0.2);
+  filter: blur(50px);
+  z-index: 6;
+  position: fixed;
+}
+
+.nouvelle_landing_content2 h1 {
+  color: black;
+  font-size: 46px;
+  letter-spacing: 2.24px;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.nouvelle_landing_content2 p {
+  color: black;
+  letter-spacing: 0.96px;
+  font-size: 18px;
+}
+.nouvelle_landing_buttontweet2 button {
+  margin-top: 32px;
+  border-radius: 8px;
+  background: black;
+  padding: 20px 32px;
+  letter-spacing: 0.96px;
+  color: #fff;
+  border: none;
+}
+
+.planets {
+  width: 1287.127px;
+  position: absolute;
+  z-index: 10;
+}
+.nouvelle_landing_content2 {
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 80px;
+}

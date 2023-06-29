@@ -1,0 +1,68 @@
+.defilante li {
+  /* Headband styles */
+  max-width: 195px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.defilante ul {
+  display: flex;
+  flex-direction: row;
+  width: calc(180px * 24);
+  justify-content: flex-end;
+}
+
+@keyframes translateinfinite {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.defilante {
+  overflow: hidden;
+  background: black;
+  white-space: nowrap;
+}
+.slide {
+  animation: 16s translateinfinite linear infinite;
+}
+
+.defilante span {
+  display: flex;
+  width: 88px;
+  align-items: center;
+}
+.defilante .titre {
+  color: #ff7733;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 800px #ff7733, 0 0 700px #ff7733, 0 0 700px #ff7733,
+    0 0 10px #ff7733, 0 0 200px #ff7733;
+}
+.red {
+  color: red;
+}
+
+.green {
+  color: #4eee16;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  margin-left: 5px; /* Adjust the value to suit your needs */
+  width: 200px;
+}
+.arrow-down {
+  margin: 0;
+}
+.arrow-up {
+  margin: 0;
+}
