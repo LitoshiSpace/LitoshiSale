@@ -67,7 +67,8 @@
 .nouvelle_landing_buttontweet button {
   margin-top: 32px;
   border-radius: 8px;
-  background: #009df2;
+  background: #563aff;
+  font-size: 24px;
   padding: 20px 32px;
   letter-spacing: 0.96px;
   color: #fff;
@@ -90,7 +91,7 @@
   height: 400px;
   flex-shrink: 0;
   border-radius: 428.308px;
-  background: #009df2;
+  background: #563aff;
   filter: blur(100px);
   position: fixed;
   z-index: 8;
@@ -124,7 +125,7 @@
 
 @media (min-height: 900px) {
   .nouvelleflex {
-    margin-top: 700px;
+    margin-top: 600px;
   }
 }
 @media (min-height: 1200px) {
@@ -135,5 +136,37 @@
 @media (min-height: 1500px) {
   .nouvelleflex {
     margin-top: 1000px;
+  }
+}
+@media (max-width: 570px) {
+  .newlogo {
+    position: absolute;
+    top: 0;
+    left: unset;
+    right: unset;
+    margin-left: unset;
+    width: 70%;
+  }
+  .nouvelle_landing_content h1 {
+    font-size: 36px;
+  }
+  .nouvelle_landing_content p {
+    max-width: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .newlogo {
+    position: absolute;
+    top: 0;
+    left: unset;
+    right: unset;
+    margin-left: unset;
+    width: 70%;
+  }
+  .nouvelle_landing_content h1 {
+    font-size: 36px;
+  }
+  .nouvelle_landing_content p {
+    max-width: 300px;
   }
 }
