@@ -32,7 +32,9 @@ export default function Nouvellelanding() {
             </p>
           </div>
           <div className="nouvelle_landing_buttontweet">
-            <button type="button">Participate now</button>
+            <a href="https://twitter.com/home">
+              <button type="button">Participate now</button>
+            </a>
           </div>
         </div>
         <div className="nouvellelanding_footer">
