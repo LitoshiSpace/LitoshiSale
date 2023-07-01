@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Modal.css";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
-  const [address, setAddress] = useState('');
+  const [address, setAddress] = useState("");
 
   const toggleModal = () => {
     setModal(!modal);
@@ -20,11 +21,11 @@ export default function Modal() {
     try {
       const accounts = await window.unisat.requestAccounts();
       setAddress(accounts[0]);
-      console.log('connect success', accounts);
+      console.log("connect success", accounts);
       setIsConnected(true);
       toggleModal();
     } catch (e) {
-      console.log('connect failed');
+      console.log("connect failed");
       setIsLoggedOut(true);
     }
   };
@@ -40,12 +41,12 @@ export default function Modal() {
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
             <h2>Connect a Wallet</h2>
-            <p>
-              {isConnected}
-              <button onClick={requestAccounts}>Connect your Unisat Wallet</button>
-            </p>
+            {isConnected}
+            <button className="modal-connect" onClick={requestAccounts}>
+              Connect your Unisat Wallet
+            </button>
             <button className="close-modal" onClick={toggleModal}>
-              CLOSE
+              <AiOutlineClose />
             </button>
           </div>
         </div>

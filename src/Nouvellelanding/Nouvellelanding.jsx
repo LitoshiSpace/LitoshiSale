@@ -39,12 +39,9 @@ export default function Nouvellelanding() {
               Join one of the greatest Ordinals adventures. Everything begins
             </p>
           </div>
+          <Modal />
           <div className="nouvelle_landing_buttontweet">
-            <Modal />
-            <button type="button">Claim Now</button>
-              <button onClick={handleTweet}>
-                Participate Now
-              </button>
+            <button onClick={handleTweet}>Participate Now</button>
           </div>
         </div>
         <div className="nouvellelanding_footer">
