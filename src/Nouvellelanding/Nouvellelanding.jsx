@@ -9,7 +9,7 @@ import Github from "./GitHub logo.svg";
 import Medium from "./medium logo.svg";
 import Twitter from "./twitter logo.svg";
 import newlogo from "./newlogo.svg";
-import Modal from "./Components/Modal";
+import Modal from "../Modal/Modal";
 
 export default function Nouvellelanding() {
   const handleTweet = () => {
@@ -37,17 +37,14 @@ export default function Nouvellelanding() {
             <h1>Proof of Participation</h1>
             <p>
               Join one of the greatest Ordinals adventures. Everything begins
-              with a Big Bang.
             </p>
           </div>
           <div className="nouvelle_landing_buttontweet">
             <Modal />
             <button type="button">Claim Now</button>
-            <a href="https://twitter.com/home">
-              <button type="button" onClick={handleTweet}>
+              <button onClick={handleTweet}>
                 Participate Now
               </button>
-            </a>
           </div>
         </div>
         <div className="nouvellelanding_footer">
@@ -62,7 +59,7 @@ export default function Nouvellelanding() {
             <a href="https://medium.com/@litebitmarket">
               <img src={Medium} alt="" />
             </a>
-            <a href="https://github.com/Litoshimarket">
+            <a href="https://github.com/LitoshiSpace">
               <img src={Github} alt="" />
             </a>
             <a href="https://litoshi-market.gitbook.io/litoshi-market/">
