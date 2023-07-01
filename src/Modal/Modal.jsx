@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./Modal.css";
 import { AiOutlineClose } from "react-icons/ai";
 
-export default function Modal() {
+export default function Modal({onAddressChange }) {
   const [modal, setModal] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
-  const [address, setAddress] = useState("");
 
   const toggleModal = () => {
     setModal(!modal);
@@ -17,10 +16,23 @@ export default function Modal() {
     document.body.classList.remove("active-modal");
   }
 
-  const requestAccounts = async () => {
+  const requestUnisatAccounts = async () => {
     try {
       const accounts = await window.unisat.requestAccounts();
-      setAddress(accounts[0]);
+      onAddressChange(accounts[0]);
+      console.log("connect success", accounts);
+      setIsConnected(true);
+      toggleModal();
+    } catch (e) {
+      console.log("connect failed");
+      setIsLoggedOut(true);
+    }
+  };
+
+  const requestLitescribeAccounts = async () => {
+    try {
+      const accounts = await window.litescribe.requestAccounts();
+      onAddressChange(accounts[0]);
       console.log("connect success", accounts);
       setIsConnected(true);
       toggleModal();
@@ -33,17 +45,20 @@ export default function Modal() {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        Open
+        Connect your Wallet
       </button>
 
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <h2>Connect a Wallet</h2>
+            <h2></h2>
             {isConnected}
-            <button className="modal-connect" onClick={requestAccounts}>
-              Connect your Unisat Wallet
+            <button className="modal-connect" onClick={requestUnisatAccounts}>
+              UniSat Wallet
+            </button>
+            <button className="modal-connect" onClick={requestLitescribeAccounts}>
+              Litescribe Wallet
             </button>
             <button className="close-modal" onClick={toggleModal}>
               <AiOutlineClose />
