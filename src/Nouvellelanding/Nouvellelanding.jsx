@@ -9,8 +9,17 @@ import Github from "./GitHub logo.svg";
 import Medium from "./medium logo.svg";
 import Twitter from "./twitter logo.svg";
 import newlogo from "./newlogo.svg";
+import Modal from "./Components/Modal";
 
 export default function Nouvellelanding() {
+  const handleTweet = () => {
+    const tweetText = "Contenu de votre tweet";
+    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
+      tweetText
+    )}`;
+    window.open(tweetUrl, "_blank");
+  };
+
   return (
     <>
       <div className="nouvellemax">
@@ -32,8 +41,12 @@ export default function Nouvellelanding() {
             </p>
           </div>
           <div className="nouvelle_landing_buttontweet">
+            <Modal />
+            <button type="button">Claim Now</button>
             <a href="https://twitter.com/home">
-              <button type="button">Participate Now</button>
+              <button type="button" onClick={handleTweet}>
+                Participate Now
+              </button>
             </a>
           </div>
         </div>
