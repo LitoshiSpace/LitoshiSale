@@ -12,14 +12,15 @@ import newlogo from "./newlogo.svg";
 import Modal from "../Modal/Modal";
 
 export default function Nouvellelanding() {
-  const [address, setAddress] = useState('');
+  const [address, setAddress] = useState("");
 
   const handleAddressChange = (newAddress) => {
     setAddress(newAddress);
   };
 
   const handleTweet = () => {
-    const tweetText = "This is my claim proof @Litoshimarket\n\nMy address : "+address;
+    const tweetText =
+      "This is my claim proof @Litoshimarket\n\nMy address : " + address;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       tweetText
     )}`;
@@ -43,13 +44,16 @@ export default function Nouvellelanding() {
             <h1>Proof of Participation</h1>
             <p>
               Join one of the greatest Ordinals adventures. Everything begins
+              with a Big Bang.
             </p>
           </div>
-          {address.length === 0 ? <Modal address={address} onAddressChange={handleAddressChange}/> :
-          <div className="nouvelle_landing_buttontweet">
-            <button onClick={handleTweet}>Participate Now</button>
-          </div>
-          }
+          {address.length === 0 ? (
+            <Modal address={address} onAddressChange={handleAddressChange} />
+          ) : (
+            <div className="nouvelle_landing_buttontweet">
+              <button onClick={handleTweet}>Participate Now</button>
+            </div>
+          )}
         </div>
         <div className="nouvellelanding_footer">
           <p>Find us on</p>
