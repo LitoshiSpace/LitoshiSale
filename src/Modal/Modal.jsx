@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./Modal.css";
 import { AiOutlineClose } from "react-icons/ai";
+import unisat from "../img/wallet-logo.png";
+import litescribe from "../img/litescribe-logo.png";
 
-export default function Modal({onAddressChange }) {
+export default function Modal({ onAddressChange }) {
   const [modal, setModal] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
 
@@ -54,15 +56,27 @@ export default function Modal({onAddressChange }) {
           <div className="modal-content">
             <h2></h2>
             {isConnected}
-            <button className="modal-connect" onClick={requestUnisatAccounts}>
-              UniSat Wallet
-            </button>
-            <button className="modal-connect" onClick={requestLitescribeAccounts}>
-              Litescribe Wallet
-            </button>
-            <button className="close-modal" onClick={toggleModal}>
-              <AiOutlineClose />
-            </button>
+            <div className="modal-flex">
+              <div className="button-modal">
+                <button
+                  className="modal-connect"
+                  onClick={requestUnisatAccounts}
+                >
+                  <img src={unisat} alt="" className="unisat-modal" />
+                  UniSat Wallet
+                </button>
+              </div>
+              <button
+                className="modal-connect"
+                onClick={requestLitescribeAccounts}
+              >
+                <img src={litescribe} alt="" className="unisat-modal" />
+                Litescribe Wallet
+              </button>
+              <button className="close-modal" onClick={toggleModal}>
+                <AiOutlineClose />
+              </button>
+            </div>
           </div>
         </div>
       )}
