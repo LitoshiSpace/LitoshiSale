@@ -63,6 +63,7 @@
   font-size: 18px;
   max-width: 500px;
   margin: auto;
+  font-family: "MontRegular";
 }
 .nouvelle_landing_buttontweet button {
   margin-top: 32px;
@@ -116,6 +117,7 @@
   z-index: 9;
   margin-bottom: 40px;
   gap: 12px;
+  color: #adadad;
 }
 
 .nouvellelanding_lien {
