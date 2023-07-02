@@ -73,6 +73,7 @@
   letter-spacing: 0.96px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .ellipse {
