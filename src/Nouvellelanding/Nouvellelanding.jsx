@@ -19,7 +19,7 @@ export default function Nouvellelanding() {
   };
 
   const handleTweet = () => {
-    const tweetText = "Contenu de votre tweet "+address;
+    const tweetText = "This is my claim proof @Litoshimarket\n\nMy address : "+address;
     const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       tweetText
     )}`;
