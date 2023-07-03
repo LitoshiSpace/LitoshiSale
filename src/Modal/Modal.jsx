@@ -44,6 +44,19 @@ export default function Modal({ onAddressChange }) {
     }
   };
 
+  const requestUnielonAccounts = async () => {
+    try {
+      const accounts = await window.unielon.requestAccounts();
+      onAddressChange(accounts[0]);
+      console.log("connect success", accounts);
+      setIsConnected(true);
+      toggleModal();
+    } catch (e) {
+      console.log("connect failed");
+      setIsLoggedOut(true);
+    }
+  };
+
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
@@ -72,6 +85,13 @@ export default function Modal({ onAddressChange }) {
               >
                 <img src={litescribe} alt="" className="unisat-modal" />
                 Litescribe Wallet
+              </button>
+              <button
+                className="modal-connect"
+                onClick={requestUnielonAccounts}
+              >
+                <img src={litescribe} alt="" className="unisat-modal" />
+                Unielon Wallet
               </button>
               <button className="close-modal" onClick={toggleModal}>
                 <AiOutlineClose />
