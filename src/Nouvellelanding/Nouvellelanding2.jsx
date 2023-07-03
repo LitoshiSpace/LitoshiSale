@@ -15,7 +15,6 @@ export default function Nouvellelanding() {
     <>
       <div className="nouvellemax">
         <img src={stars} alt="" className="stars" />
-        <img src={Planets} alt="" className="planets" />
         <div className="nouvelleflex">
           <div className="ellipseglobal">
             <div className="ellipsev0"></div>
@@ -23,17 +22,22 @@ export default function Nouvellelanding() {
             <div className="ellipsev2"></div>
             <div className="ellipsev3"></div>
             <div className="ellipsev4"></div>
+            <div className="planet-1"></div>
+            <div className="planet-2"></div>
+            <div className="planet-3"></div>
+            <div className="planet-4"></div>
+            <div className="planet-5"></div>
+            <div className="planet-6"></div>
           </div>
           <img src={Planet} alt="" className="planet" />
         </div>
         <div className="nouvelle_landing_content2">
           <div>
-            <h1>Join the Space</h1>
+            <h1>Join the Ordinals Space</h1>
             <p>
-              Dorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-              tellus elit sed risus..
+              Discover and navigate through NFT & Token Ordinals. We are present
+              on the Bitcoin , Litecoin & Dogecoin Blockchains. Manage, Track &
+              Interact with the market
             </p>
           </div>
           <div className="nouvelle_landing_buttontweet2">

@@ -70,6 +70,7 @@
   letter-spacing: 0.96px;
   color: #fff;
   border: none;
+  font-size: 24px;
 }
 
 .planets {
@@ -83,4 +84,152 @@
   text-align: center;
   max-width: 700px;
   margin-bottom: 80px;
+}
+.planet-1 {
+  width: 162px;
+  height: 162px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(255, 122, 0, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation 73954ms linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(180deg) translate(525px) rotate(180deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(525px) rotate(-360deg);
+  }
+}
+
+.planet-2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(255, 122, 0, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation2 53954ms linear infinite;
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(10deg) translate(425px) rotate(10deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(425px) rotate(-360deg);
+  }
+}
+
+.planet-3 {
+  width: 172px;
+  height: 172px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(226, 61, 190, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation3 53954ms linear infinite;
+}
+
+@keyframes rotation3 {
+  0% {
+    transform: rotate(-40deg) translate(625px) rotate(-40deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(625px) rotate(-360deg);
+  }
+}
+
+.planet-4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(226, 61, 190, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation4 53954ms linear infinite;
+}
+
+@keyframes rotation4 {
+  0% {
+    transform: rotate(-135deg) translate(625px) rotate(-135deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(625px) rotate(-360deg);
+  }
+}
+.planet-5 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(226, 61, 190, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation5 63954ms linear infinite;
+}
+
+@keyframes rotation5 {
+  0% {
+    transform: rotate(-20deg) translate(640px) rotate(-20deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(640px) rotate(360deg);
+  }
+}
+
+.planet-6 {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(
+      84.4% 84.4% at 27.78% 24.07%,
+      #151516 3.99%,
+      rgba(14, 14, 14, 0.14) 68.23%,
+      rgba(226, 61, 190, 0.85) 100%
+    ),
+    #151516;
+  position: fixed;
+  z-index: 10;
+  animation: rotation6 93954ms linear infinite;
+}
+
+@keyframes rotation6 {
+  0% {
+    transform: rotate(-155deg) translate(690px) rotate(-155deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(690px) rotate(360deg);
+  }
 }

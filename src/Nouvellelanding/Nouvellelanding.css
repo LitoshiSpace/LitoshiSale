@@ -130,14 +130,19 @@
     margin-top: 600px;
   }
 }
-@media (min-height: 1200px) {
+@media (min-height: 1102px) {
   .nouvelleflex {
     margin-top: 900px;
   }
 }
-@media (min-height: 1500px) {
+@media (min-height: 1400px) {
   .nouvelleflex {
     margin-top: 1000px;
+  }
+}
+@media (min-height: 1500px) {
+  .nouvelleflex {
+    margin-top: 1100px;
   }
 }
 @media (max-width: 570px) {

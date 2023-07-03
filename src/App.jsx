@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nouvellelanding from "./Nouvellelanding/Nouvellelanding";
-
+import Nouvellelanding2 from "./Nouvellelanding/Nouvellelanding2";
 function App() {
   return (
     <BrowserRouter>
