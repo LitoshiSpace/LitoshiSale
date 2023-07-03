@@ -3,6 +3,7 @@ import "./Modal.css";
 import { AiOutlineClose } from "react-icons/ai";
 import unisat from "../img/wallet-logo.png";
 import litescribe from "../img/litescribe-logo.png";
+import dogchain from "../img/134824667.svg";
 
 export default function Modal({ onAddressChange }) {
   const [modal, setModal] = useState(false);
@@ -90,7 +91,7 @@ export default function Modal({ onAddressChange }) {
                 className="modal-connect"
                 onClick={requestUnielonAccounts}
               >
-                <img src={litescribe} alt="" className="unisat-modal" />
+                <img src={dogchain} alt="" className="unisat-modal" />
                 Unielon Wallet
               </button>
               <button className="close-modal" onClick={toggleModal}>
