@@ -1,0 +1,37 @@
+.mintsucces-title {
+  max-width: 500px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.mintsucces-title p {
+  font-size: 30px;
+}
+.mintsucces-title h1 {
+  font-size: 48px;
+}
+.mintsucces-title span {
+  color: #563aff;
+}
+.mintsucces_content_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 16px;
+  margin-top: 40px;
+}
+.mintsucces_content_flex img {
+  width: 30px;
+}
+.mintsucces_content_flex p {
+  color: #2fc367;
+  font-size: 25px;
+  font-family: "MontRegular";
+  letter-spacing: 1.92px;
+}
+
+.mintnot_emoji {
+}

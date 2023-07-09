@@ -1,0 +1,49 @@
+.planetwork {
+  position: absolute;
+  width: 80%;
+}
+.planets_work {
+  width: 80%;
+  position: absolute;
+}
+
+.mintno_work_global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.planet_works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mintno_work_content {
+  position: absolute;
+  z-index: 4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin-bottom: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mintno_work_content p {
+  font-size: 20px;
+  letter-spacing: 1.6px;
+  font-family: "MontRegular";
+  text-align: center;
+}
+
+.mintno_work_content input {
+  width: 803px;
+  background: transparent;
+  border-radius: 8px;
+  border: 2px solid #404040;
+  padding: 16px 400px 16px 40px;
+}

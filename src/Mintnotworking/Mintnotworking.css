@@ -1,0 +1,55 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background: #151516;
+}
+
+.mintnot_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mintnot_emoji {
+  display: flex;
+  image-rendering: pixelated;
+}
+.mintnot_content_global {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  gap: 219px;
+}
+.mintnot_content_flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 16px;
+  margin-top: 40px;
+}
+.mintnot_content_flex p {
+  color: #ec3d7c;
+  font-size: 25px;
+  font-family: "MontRegular";
+  letter-spacing: 1.92px;
+}
+.mintnot_content_flex img {
+  width: 30px;
+  height: 30px;
+}
+.mintnot-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mintnot-title p {
+  font-size: 30px;
+}
+.mintnot-title h1 {
+  font-size: 48px;
+}

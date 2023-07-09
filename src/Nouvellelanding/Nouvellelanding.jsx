@@ -10,6 +10,7 @@ import Medium from "./medium logo.svg";
 import Twitter from "./twitter logo.svg";
 import newlogo from "./newlogo.svg";
 import Modal from "../Modal/Modal";
+import { BrowserRouter, Link } from "react-router-dom";
 
 export default function Nouvellelanding() {
   const [address, setAddress] = useState("");
@@ -35,24 +36,23 @@ export default function Nouvellelanding() {
           <div className="ellipseglobal">
             <div className="ellipse"></div>
             <div className="ellipse2"></div>
+            <div className="ellipse3"></div>
           </div>
           <img src={Planet} alt="" className="planet" />
         </div>
         <div className="nouvelle_landing_content">
           <div>
-            <h1>Proof of Participation</h1>
+            <h1>Time to Mint </h1>
             <p>
               Join one of the greatest Ordinals adventures. Everything begins
               with a Big Bang.
             </p>
           </div>
-          {address.length === 0 ? (
-            <Modal address={address} onAddressChange={handleAddressChange} />
-          ) : (
-            <div className="nouvelle_landing_buttontweet">
-              <button onClick={handleTweet}>Participate Now</button>
-            </div>
-          )}
+          <div className="nouvelle_landing_buttontweet">
+            <Link to="/mint">
+              <button>Mint</button>
+            </Link>
+          </div>
         </div>
         <div className="nouvellelanding_footer">
           <p>Find us on</p>
