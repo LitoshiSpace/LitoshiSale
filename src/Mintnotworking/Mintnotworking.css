@@ -53,3 +53,19 @@
 .mintnot-title h1 {
   font-size: 48px;
 }
+
+@media (max-width: 750px) {
+  .mintnot_content_global {
+    gap: unset;
+  }
+  .mintnot_emoji img {
+    width: 100%;
+  }
+
+  .mintnot_content {
+    margin-left: 20px;
+  }
+  .newlogo {
+    margin-left: 20px;
+  }
+}

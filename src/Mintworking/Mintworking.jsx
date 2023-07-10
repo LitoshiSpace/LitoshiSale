@@ -22,7 +22,7 @@ export default function Mintworking() {
               $LTSI tokens
             </p>
           </div>
-          <div className="nouvelle_landing_buttontweet">
+          <div className="mintno_work_content_input">
             <input type="text" placeholder="Your LTC address" />
           </div>
         </div>

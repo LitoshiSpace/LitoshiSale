@@ -41,9 +41,22 @@
 }
 
 .mintno_work_content input {
-  width: 803px;
+  width: 100%;
   background: transparent;
   border-radius: 8px;
   border: 2px solid #404040;
-  padding: 16px 400px 16px 40px;
+  padding: 16px 40px 16px 40px;
+  color: white;
+}
+.mintno_work_content_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 820px) {
+  .mintno_work_content input {
+    max-width: 803px;
+  }
 }

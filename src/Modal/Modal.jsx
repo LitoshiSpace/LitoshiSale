@@ -61,7 +61,7 @@ export default function Modal({ onAddressChange }) {
   return (
     <>
       <button onClick={toggleModal} className="btn-modal">
-        Connect your Wallet
+        Mint
       </button>
 
       {modal && (

@@ -48,11 +48,15 @@ export default function Nouvellelanding() {
               with a Big Bang.
             </p>
           </div>
-          <div className="nouvelle_landing_buttontweet">
-            <Link to="/mint">
-              <button>Mint</button>
-            </Link>
-          </div>
+          {address.length === 0 ? (
+            <Modal address={address} onAddressChange={handleAddressChange} />
+          ) : (
+            <div className="nouvelle_landing_buttontweet">
+              <Link to="/mint">
+                <button>Mint</button>
+              </Link>
+            </div>
+          )}
         </div>
         <div className="nouvellelanding_footer">
           <p>Find us on</p>
