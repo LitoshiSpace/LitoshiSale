@@ -34,6 +34,11 @@ export default function Nouvellelanding() {
         <img src={newlogo} alt="" className="newlogo" />
         <div className="nouvelleflex">
           <div className="ellipseglobal">
+            <div className="progressbar_bg">
+              <div className="progressbar">
+                <p>20%</p>
+              </div>
+            </div>
             <div className="ellipse"></div>
             <div className="ellipse2"></div>
             <div className="ellipse3"></div>

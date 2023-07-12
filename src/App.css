@@ -1,3 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------
+  Global
+------------------------------ */
+
+body {
+  background-color: #000;
+}
+
 @font-face {
   font-family: "Mont";
   src: url("./fonts/Mont/Mont-Bold.otf");
@@ -9,8 +21,6 @@
   src: url("./fonts/Mont/Mont-Regular.otf");
   font-display: block;
 }
-
-
 
 body {
   color: white;

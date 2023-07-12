@@ -20,6 +20,27 @@
   height: 100%;
   position: absolute;
 }
+
+.progressbar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  max-width: 20%;
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  color: black;
+}
+.progressbar_bg {
+  position: absolute;
+  margin-top: 130px;
+  top: 0;
+  background-color: #563aff;
+  width: 25%;
+  height: 30px;
+  border-radius: 20px;
+  z-index: 100;
+}
 .nouvelleflex {
   display: flex;
   flex-direction: column;
