@@ -49,6 +49,7 @@
   "imports": {
     "#img/*": "./src/img/*",
     "#assets/*": "./src/assets/*",
+    "#asset/*": "./src/assets/img/*",
     "#components/*": "./src/components/*",
     "#layouts": "./src/layouts",
     "#hooks/*": "./src/hooks/*",
