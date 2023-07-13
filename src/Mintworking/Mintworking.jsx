@@ -45,37 +45,40 @@ export default function Mintworking() {
           <div className="mintno_work_content_input">
             <input type="text" placeholder="Your LTC address" />
           </div>
-          {!wallet && (
-            <h6 className="text-white text-center font-semibold uppercase">
-              Connect your wallet
-            </h6>
-          )}
-
-          <h6 className="text-white text-center font-semibold uppercase">
-            Choose an option: {option}
-          </h6>
-          {["500$LTSI"].map((item) => (
-            <select
-              value={option}
-              className="bg-[#ffffff50] px-6 py-3"
-              onChange={handleOptionChange}
-            >
-              {options.map((item) => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
+          <div className="mintwork_buttonflex">
+            {!wallet && (
+              <h6 className="text-white text-center font-semibold uppercase">
+                Connect your wallet
+              </h6>
+            )}
+            <div className="mintwork_buttonoption">
+              <h6 className="text-white text-center font-semibold uppercase">
+                Choose an option: {option}
+              </h6>
+              {["500$LTSI"].map((item) => (
+                <select
+                  value={option}
+                  className="bg-[#ffffff50] px-6 py-3"
+                  onChange={handleOptionChange}
+                >
+                  {options.map((item) => (
+                    <option key={item} value={item}>
+                      {item}
+                    </option>
+                  ))}
+                </select>
               ))}
-            </select>
-          ))}
+            </div>
+            <Button
+              className="bg-[#ffffff50] px-6 py-3"
+              onClick={() => navigate("/mint/buy")}
+            >
+              <span className="text-xl text-white text-center font-semibold uppercase">
+                Create a new order
+              </span>
+            </Button>
+          </div>
         </div>
-        <Button
-          className="bg-[#ffffff50] px-6 py-3"
-          onClick={() => navigate("/mintbuy")}
-        >
-          <span className="text-xl text-white text-center font-semibold uppercase">
-            Create a new order
-          </span>
-        </Button>
       </div>
     </>
   );

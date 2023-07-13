@@ -57,7 +57,7 @@ export default function Nouvellelanding() {
             <Modal address={address} onAddressChange={handleAddressChange} />
           ) : (
             <div className="nouvelle_landing_buttontweet">
-              <Link to="/mint">
+              <Link to="/minting">
                 <button>Mint</button>
               </Link>
             </div>

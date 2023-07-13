@@ -1,10 +1,15 @@
 //  Dependencies
 // ===========================================================
 
-import React, { useEffect } from "react";
-import { useLocation, useNavigate, Outlet } from "react-router-dom";
-// import { useSelector } from 'react-redux';
-import { NavbarApp } from "#components/Navbars";
+import React, { useState, useEffect } from "react";
+import { useNavigate, Outlet, useLocation } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
+
+//  Components
+// ===========================================================
+
+import Modal from "#components/Modal/Modal";
 
 
 //  Route
@@ -13,24 +18,28 @@ import { NavbarApp } from "#components/Navbars";
 export const RouteLogged = () => {
 
   // Hooks
-  // const navigate = useNavigate();
-  // const location  = useLocation();
-  const user = null;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const user = useSelector(state => state.settings.user);
 
+  // User
+  useEffect(() => {
+
+    // User is not connected
+    if (!user?.address)
+      navigate("/home");
+
+  }, [user]);
 
   return (
-    <div className="w-screen h-screen flex overflow-hidden">
-      <div className="w-[20%] h-full bg-[#555]">
-        <NavbarApp 
-          user={user} 
-        />
-      </div>
-      <div className="w-[80%] h-full bg-[#666]">
-        <Outlet
-          context={{
-            user,
-          }}
-        />
+    <div className="w-screen h-screen overflow-y-auto">
+      <Outlet
+        context={{
+          user
+        }}
+      />
+      <div className="absolute top-0 right-0 z-[200] p-6">
+        <Modal />
       </div>
     </div>
   )

@@ -4,18 +4,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 //  Navbar
 // ===========================================================
 
 export function MenuLink({ url, children }) {
+  // Hooks
+  const navigate = useNavigate();
 
-    // Hooks
-    const navigate = useNavigate();
-
-    return (
-        <li 
-            className={`
+  return (
+    <li
+      className={`
                 w-full
                 flex justfy-center items-center gap-3
                 text-white
@@ -26,9 +24,9 @@ export function MenuLink({ url, children }) {
                 hover:bg-[#563aff33]
                 hover:border-[#563aff]
             `}
-            onClick={() => navigate(url)}
-        >
-            {children}
-        </li>
-    );
+      onClick={() => navigate(url)}
+    >
+      {children}
+    </li>
+  );
 }

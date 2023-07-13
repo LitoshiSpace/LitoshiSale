@@ -12,7 +12,6 @@ export function ColCard({ style, className, onClick, text, value }) {
       className={`
         ${className}
         rounded-xl
-        p-6
         cursor-pointer
         flex flex-col-reverse justify-evenly items-start
       `}

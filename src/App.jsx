@@ -6,17 +6,17 @@ import Mintnotworking from "./Mintnotworking/Mintnotworking";
 import Mintworking from "./Mintworking/Mintworking";
 import Mintbuy from "./Mintworking/Mintbuy/Mintbuy";
 import Mintsucces from "./Mintworking/Mintsucces/Mintsucces";
-import { RouteNotLogged, RouteLogged } from "#routes";
+import { RouteNotLogged, RouteLogged } from "./routes";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<RouteNotLogged />}>
-          <Route path="/" element={<Nouvellelanding />} />
+          <Route path="/*" element={<Nouvellelanding2 />} />
           <Route path="/mint" element={<Mintnotworking />} />
           <Route path="/minting" element={<Mintworking />} />
-          <Route path="/mintbuy" element={<Mintbuy />} />
+          <Route path="/mint/buy" element={<Mintbuy />} />
           <Route path="/mintsucces" element={<Mintsucces />} />
         </Route>
         {/* <Route element={<RouteLogged />}>
