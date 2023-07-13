@@ -6,9 +6,6 @@ import { Mint } from "#layouts";
 import "./Mintworking.css";
 import { useLocalStorageObj } from "#hooks/useLocalStorageObj";
 
-import info from "#asset/info.svg";
-import arrow from "#asset/arrow.svg";
-
 import { fetchWrapper } from "#services/fetch-wrapper";
 import { ColCard, Countdown, Button } from "#components/Elements";
 
