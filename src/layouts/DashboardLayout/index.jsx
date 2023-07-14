@@ -3,14 +3,13 @@
 
 import React, { useState, useEffect } from "react";
 import { useNavigate, Outlet } from "react-router-dom";
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
 import Discord from "#assets/logo/discord.svg";
 import Gitbook from "#assets/logo/gitbook.svg";
 import Github from "#assets/logo/github.svg";
 import Medium from "#assets/logo/medium.svg";
 import Twitter from "#assets/logo/twitter.svg";
-
 
 //  Components
 // ===========================================================
@@ -41,23 +40,22 @@ function Footer() {
         </a>
       </div>
     </div>
-  )
-};
-
-
+  );
+}
 
 //  Route
 // ===========================================================
 
 export const RouteNotLogged = () => {
-
   // Variables
-  const [wallet, setWallet] = useState("ltc1q33srfx950rvu3nfzqs5fd3pes6r0gm46rw7uq3");
+  const [wallet, setWallet] = useState(
+    "ltc1q33srfx950rvu3nfzqs5fd3pes6r0gm46rw7uq3"
+  );
   const [option, setOption] = useState("500$LTSI");
 
   // Hooks
   const navigate = useNavigate();
-  const user = useSelector(state => state.settings.user);
+  const user = useSelector((state) => state.settings.user);
 
   // onChange
   // useEffect(() => {
@@ -68,14 +66,13 @@ export const RouteNotLogged = () => {
 
   // }, [user]);
 
-
   return (
     <div className="w-screen h-screen overflow-y-auto">
       <Outlet
         context={{
-          user
+          user,
         }}
       />
     </div>
-  )
+  );
 };

@@ -145,30 +145,35 @@ function Order({ wallet, option, setContent }) {
   }
 
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-6 ">
-      {!data ? (
-        <h1 className="text-3xl text-white text-center font-semibold">
-          Loading...
-        </h1>
-      ) : data && !data?.order ? (
-        <>
+    <>
+      {" "}
+      <div className="flex flex-col fixed top-20 justify-center items-center left-1/2 right-1/2 transform -translate-x-1/2">
+        {!data ? (
           <h1 className="text-3xl text-white text-center font-semibold">
-            {data}
+            Loading...
           </h1>
-          <Button
-            className="bg-[#ffffff50] px-6 py-3"
-            onClick={() => setContent(null)}
-          >
-            <span className="text-xl text-white text-center font-semibold uppercase">
-              Return to setup
-            </span>
-          </Button>
-        </>
-      ) : null}
-      {Object.keys(orders).length ? (
-        <ListOrders orders={orders} setOrders={setOrders} />
-      ) : null}
-    </div>
+        ) : data && !data?.order ? (
+          <>
+            <h1 className="text-3xl text-white text-center font-semibold w-max">
+              {data}
+            </h1>
+            <Button
+              className="bg-[#ffffff50]  px-6 py-3"
+              onClick={() => setContent(null)}
+            >
+              <span className="text-xl text-white text-center font-semibold uppercase w-max">
+                Return to setup
+              </span>
+            </Button>
+          </>
+        ) : null}
+      </div>
+      <div className="w-full h-full flex  justify-start items-center gap-6 ">
+        {Object.keys(orders).length ? (
+          <ListOrders orders={orders} setOrders={setOrders} />
+        ) : null}
+      </div>
+    </>
   );
 }
 

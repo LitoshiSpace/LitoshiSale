@@ -23,7 +23,7 @@ import Twitter from "#assets/logo/twitter.svg";
 
 function Footer() {
   return (
-    <div className="w-full flex flex-col justify-center items-center p-12 gap-6 bottom-0 absolute">
+    <div className="w-full flex flex-col justify-center items-center p-12 gap-6 bottom-0 fixed">
       <h3 className="text-xl text-white text-center font-semibold">
         Find us on
       </h3>
