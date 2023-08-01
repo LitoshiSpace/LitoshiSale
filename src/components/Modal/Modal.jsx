@@ -12,6 +12,7 @@ import { updateUser } from "#stores/components/settingsSlice";
 
 import unisat from "#assets/wallets/unisat.png";
 import litescribe from "#assets/wallets/litescribe.png";
+import litex from "#assets/wallets/litex.png";
 import dogchain from "#assets/wallets/dogchain.svg";
 
 export default function Modal() {
@@ -43,9 +44,9 @@ export default function Modal() {
     }
   };
 
-  const requestUnielonAccounts = async () => {
+  const requestLiteXAccounts = async () => {
     try {
-      const accounts = await window.unielon.requestAccounts();
+      const accounts = await window.LiteX.requestAccounts();
       dispatch(updateUser({ address: accounts[0] }));
       setModal(false);
     } catch (e) {
@@ -91,6 +92,13 @@ export default function Modal() {
               >
                 <img src={litescribe} alt="" className="unisat-modal" />
                 Litescribe Wallet
+              </button>
+              <button
+                className="modal-connect"
+                onClick={requestLiteXAccounts}
+              >
+                <img src={litex} alt="" className="unisat-modal" />
+                LiteX Wallet
               </button>
               <button className="close-modal" onClick={() => setModal(false)}>
                 <AiOutlineClose />
