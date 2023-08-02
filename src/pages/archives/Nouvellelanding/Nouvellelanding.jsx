@@ -47,7 +47,7 @@ export default function Nouvellelanding() {
         </div>
         <div className="nouvelle_landing_content">
           <div>
-            <h1>Time to Mint </h1>
+            <h1>Time to Claim </h1>
             <p>
               Join one of the greatest Ordinals adventures. Everything begins
               with a Big Bang.
@@ -58,7 +58,7 @@ export default function Nouvellelanding() {
           ) : (
             <div className="nouvelle_landing_buttontweet">
               <Link to="/mint">
-                <button>Mint</button>
+                <button>Claim Airdrop</button>
               </Link>
             </div>
           )}
