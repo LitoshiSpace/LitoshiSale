@@ -77,7 +77,7 @@ export default function Modal() {
           onClick={() => setModal(true)}
           className="text-white text-xl font-semibold py-3 px-6 rounded-lg "
         >
-          {"Mint"}
+          {"Claim airdrop"}
         </button>
       )}
       {modal && (
